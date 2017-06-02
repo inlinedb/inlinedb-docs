@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="inlinedb" src="https://raw.githubusercontent.com/inlinedb/inlinedb/icons/idb-docs.png">
+    <img alt="inlinedb" src="https://raw.githubusercontent.com/inlinedb/inlinedb-icons/master/idb-docs.png">
 </p>
 
 <h3 align="center">
