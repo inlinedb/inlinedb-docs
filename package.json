@@ -1,0 +1,11 @@
+{
+  "name": "inlinedb-docs",
+  "private": true,
+  "description": "InlineDB documentation",
+  "repository": "inlinedb/inlinedb-docs",
+  "author": "Gopikrishna Sathyamurthy",
+  "license": "MIT",
+  "files": [
+    "docs"
+  ]
+}
