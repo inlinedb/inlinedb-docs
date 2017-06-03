@@ -1,6 +1,7 @@
 {
   "name": "inlinedb-docs",
   "private": true,
+  "main": "./docs/readme.md",
   "description": "InlineDB documentation",
   "repository": "inlinedb/inlinedb-docs",
   "author": "Gopikrishna Sathyamurthy",
