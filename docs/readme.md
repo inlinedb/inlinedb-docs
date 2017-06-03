@@ -5,5 +5,5 @@
   - [Basic usage](./getting-started#basic-usage)
   
 - [API](./api)
-  - [Database](./api#database)
-  - [Table](./api#table)
+  - [Database](./api/database.md)
+  - [Table](./api/table.md)
