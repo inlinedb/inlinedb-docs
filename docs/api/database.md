@@ -1,4 +1,4 @@
-## Database
+# Database
 
  - [Create database](#create-database)
  - [Create table](#create-table)
@@ -6,8 +6,8 @@
  - [Drop table](#drop-table)
  - [Drop database](#drop-database)
 
-### Create database
-### Create table
-### List tables
-### Drop table
-### Drop database
+## Create database
+## Create table
+## List tables
+## Drop table
+## Drop database

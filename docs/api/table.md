@@ -1,4 +1,4 @@
-## Table
+# Table
 
  - [Insert rows](#insert-rows)
  - [Query rows](#query-rows)
@@ -7,9 +7,9 @@
  - [Save queries](#save-queries)
  - [Revert queries](#revert-queries)
 
-### Insert rows
-### Query rows
-### Update rows
-### Delete rows
-### Save queries
-### Revert queries
+## Insert rows
+## Query rows
+## Update rows
+## Delete rows
+## Save queries
+## Revert queries
