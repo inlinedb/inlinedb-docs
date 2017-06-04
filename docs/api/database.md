@@ -19,7 +19,7 @@ const idb = new InlineDB(idbName);
 ```
 
 | Param | Required | Type | Default | Description |
-|:--|---|---|---|:--|
+|:---|:---:|:---:|:---:|:---|
 | idbName | Yes | _String_ | _None_ | Name of the database to create |
 
 Throws error when `idbName`
@@ -37,7 +37,7 @@ idb.createTable(tableName);
 ```
 
 | Param | Required | Type | Default | Description |
-|:--|--|---|---|:--|
+|:---|:---|:---|:---|:---|
 | tableName | Yes | _String_ | _None_ | Name of the table to create |
 
 Throws error when `tableName`
@@ -63,7 +63,7 @@ idb.dropTable(tableName);
 ```
     
 | Param | Required | Type | Default | Description |
-|:--|--|---|---|:--|
+|:---|:---|:---|:---|:---|
 | tableName | Yes | _String_ | _None_ | Name of the table to drop |
 
 Returns the current instance of [`Database`](#).
