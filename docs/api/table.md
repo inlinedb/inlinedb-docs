@@ -1,6 +1,7 @@
 # Table
 
 A table is created from a database instance using [`Database`](./database.md)`::`[`createTable`](./database.md#create-table) method.
+All data manipulation operations are transactional i.e until saved, none of the mutative queries are executed
 
 #### Methods
 
@@ -12,6 +13,8 @@ A table is created from a database instance using [`Database`](./database.md)`::
  - [Revert queries](#revert-queries)
  
 ## Insert rows
+
+Adds a query to queue to insert the given rows.
 
 ```js
 idb.insert(row[, row, ...rows]);
@@ -37,6 +40,8 @@ The current instance of [`Table`](#).
 
 ## Query rows
 
+Queries rows matched by the `filter`.
+
 ```js
 idb.query([filter]);
 ```
@@ -50,6 +55,8 @@ idb.query([filter]);
 A `Promise` that resolves to a an array of rows that is matched by the given filter.
 
 ## Update rows
+
+Adds a query to queue to update the rows that are matched by the given `filter`, and run given `update` on each of the filtered row to get the updated row.
 
 ```js
 idb.update(update[, filter]);
@@ -76,6 +83,8 @@ The current instance of [`Table`](#).
  - Can be reverted before saving using [`Table`](#)`::`[`revert`](#revert-queries).
 
 ## Delete rows
+
+Adds a query to queue to delete the rows that are matched by the given `filter`.
 
 ```js
 idb.delete([filter]);
