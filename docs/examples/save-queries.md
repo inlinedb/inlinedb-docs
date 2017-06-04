@@ -1,8 +1,8 @@
 # Save queries
 
 All the mutative queries, `::`[`insert`](../api/table.md#query-rows), `::`[`update`](../api/table.md#update-rows) and
-`::`[`delete`](../api/table.md#delete-rows) are not executed immediately, until saved. This gives the ability to revert
-the queries and a transactional feeling.
+`::`[`delete`](../api/table.md#delete-rows) are not executed immediately, until saved. This gives the ability to
+`::`[`revert`](../api/table.md#revert-queries) the queries and a transactional feeling.
 
 ```js
 table.query()
