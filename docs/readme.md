@@ -9,4 +9,6 @@
   - [Table](./api/table.md)
 
 - Examples
+- Limitations
+- Contributing
 - [License](./MIT.md)
