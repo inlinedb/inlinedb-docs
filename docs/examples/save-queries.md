@@ -4,6 +4,8 @@ All the mutative queries, `::`[`insert`](../api/table.md#query-rows), `::`[`upda
 `::`[`delete`](../api/table.md#delete-rows) are not executed immediately, until saved. This gives the ability to
 `::`[`revert`](../api/table.md#revert-queries) the queries and a transactional feeling.
 
+Note that after creating a new table, only on saving the data will be written to the system.
+
 ```js
 table.query()
   .then(rows =>
