@@ -35,6 +35,19 @@ The current instance of [`Table`](#).
  - Can be reverted before saving using [`Table`](#)`::`[`revert`](#revert-queries).
 
 ## Query rows
+
+```js
+idb.query(filter);
+```
+
+| Param | Required | Type | Default | Description |
+|:---|:---|:---|:---|:---|
+| filter | No | one of _<ul><li>Number</li><li>Array<Number></li><li>Function</li></ul>_ | `[Function: () => true]` | Takes in an `id` or an array of `ids` or a filter function that will be matched against row |
+    
+#### Returns
+
+A `Promise` that resolves to a an array of rows that is matched by the given filter.
+ 
 ## Update rows
 ## Delete rows
 ## Save queries
