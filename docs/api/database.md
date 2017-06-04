@@ -30,7 +30,6 @@ Throws error when `idbName`
     
 Returns an instance of [`Database`](#).
 
-
 ## Create table
 
 ```js
@@ -58,4 +57,15 @@ idb.listTables();
 Returns an array of table names (`Array<String>`).
 
 ## Drop table
+
+```js
+idb.dropTable('my-table');
+```
+    
+| Param | Required | Default | Description |
+|:--|---|---|:--|
+| tableName | Yes | _None_ | Name of the table |
+
+Returns the current instance of [`Database`](#).
+
 ## Drop database
