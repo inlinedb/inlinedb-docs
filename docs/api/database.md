@@ -50,5 +50,12 @@ Throws error when `tableName`
 Returns an instance of [`Table`](./table.md).
     
 ## List tables
+
+```js
+idb.listTables();
+```
+    
+Returns an array of table names (`Array<String>`).
+
 ## Drop table
 ## Drop database
