@@ -104,4 +104,25 @@ The current instance of [`Table`](#).
  - Can be reverted before saving using [`Table`](#)`::`[`revert`](#revert-queries).
 
 ## Save queries
+
+Saves pending queries to the table. Once done, it empties the query queue.
+
+```js
+idb.save();
+```
+
+#### Returns
+
+A `Promise` that would resolve once the queries are successfully saved to table.
+
 ## Revert queries
+
+Empties the pending query queue.
+
+```js
+idb.revert();
+```
+
+#### Returns
+
+The current instance of [`Table`](#).
