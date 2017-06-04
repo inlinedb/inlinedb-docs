@@ -33,3 +33,24 @@ table.update(
 //   }
 // ]
 ```
+
+An update function may return an object too, which will be merged with the original row on `::`[`save`](../api/table.md#save-queries).
+
+```js
+table.update(() => ({column: 'override'}));
+
+// [
+//   {
+//     $idbID: 1,
+//     column: 'override'
+//   },
+//   {
+//     $idbID: 2,
+//     column: 'override'
+//   },
+//   {
+//     $idbID: 3,
+//     column: 'override'
+//   }
+// ]
+```
