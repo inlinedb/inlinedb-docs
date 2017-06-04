@@ -23,13 +23,32 @@ const idb = new InlineDB('my-database');
 | idbName | Yes | _None_ | Name of the database |
 
 Throws error when `idbName`
+ - is not provided.
+ - is not a string.
+ - does not match `[a-zA-Z0-9]+([-_][a-zA-Z0-9]+)*` pattern.
+    - see [naming conventions](./naming-conventions.md) for examples.
+    
+Returns an instance of [`Database`](#).
+
+
+## Create table
+
+```js
+idb.createTable('my-table');
+```
+
+| Param | Required | Default | Description |
+|:--|---|---|:--|
+| tableName | Yes | _None_ | Name of the table |
+
+Throws error when `tableName`
  - is not provided
  - is not a string
  - does not match `[a-zA-Z0-9]+([-_][a-zA-Z0-9]+)*` pattern
     - see [naming conventions](./naming-conventions.md) for examples
-
-
-## Create table
+    
+Returns an instance of [`Table`](./table.md).
+    
 ## List tables
 ## Drop table
 ## Drop database
