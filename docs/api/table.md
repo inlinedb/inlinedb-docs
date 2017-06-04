@@ -17,7 +17,7 @@ All data manipulation operations are transactional i.e until saved, none of the 
 Adds a query to queue to insert the given rows.
 
 ```js
-idb.insert(row[, row, ...rows]);
+table.insert(row[, row, ...rows]);
 ```
 
 | Param | Required | Type | Default | Description |
@@ -43,7 +43,7 @@ The current instance of [`Table`](#).
 Queries rows matched by the `filter`.
 
 ```js
-idb.query([filter]);
+table.query([filter]);
 ```
 
 | Param | Required | Type | Default | Description |
@@ -59,7 +59,7 @@ A `Promise` that resolves to a an array of rows that is matched by the given fil
 Adds a query to queue to update the rows that are matched by the given `filter`, and run given `update` on each of the filtered row to get the updated row.
 
 ```js
-idb.update(update[, filter]);
+table.update(update[, filter]);
 ```
 
 | Param | Required | Type | Default | Description |
@@ -87,7 +87,7 @@ The current instance of [`Table`](#).
 Adds a query to queue to delete the rows that are matched by the given `filter`.
 
 ```js
-idb.delete([filter]);
+table.delete([filter]);
 ```
 
 | Param | Required | Type | Default | Description |
@@ -108,7 +108,7 @@ The current instance of [`Table`](#).
 Saves pending queries to the table. Once done, it empties the query queue.
 
 ```js
-idb.save();
+table.save();
 ```
 
 #### Returns
@@ -120,7 +120,7 @@ A `Promise` that would resolve once the queries are successfully saved to table.
 Empties the pending query queue.
 
 ```js
-idb.revert();
+table.revert();
 ```
 
 #### Returns
