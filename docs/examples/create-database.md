@@ -5,7 +5,6 @@ Import the InlineDB library to instantiate a new database.
 ```js
 import InlindeDB from 'inlinedb';
 
-// create a new database
 const idbName = 'my-database';
 const idb = new InlindeDB(idbName);
 ```
