@@ -15,12 +15,12 @@
 A database can be created using the `new` operator:
 
 ```js
-const idb = new InlineDB('my-database');
+const idb = new InlineDB(idbName);
 ```
 
-| Param | Required | Default | Description |
-|:--|---|---|:--|
-| idbName | Yes | _None_ | Name of the database |
+| Param | Required | Type | Default | Description |
+|:--|---|---|---|:--|
+| idbName | Yes | _String_ | _None_ | Name of the database to create |
 
 Throws error when `idbName`
  - is not provided.
@@ -33,12 +33,12 @@ Returns an instance of [`Database`](#).
 ## Create table
 
 ```js
-idb.createTable('my-table');
+idb.createTable(tableName);
 ```
 
-| Param | Required | Default | Description |
-|:--|---|---|:--|
-| tableName | Yes | _None_ | Name of the table |
+| Param | Required | Type | Default | Description |
+|:--|--|---|---|:--|
+| tableName | Yes | _String_ | _None_ | Name of the table to create |
 
 Throws error when `tableName`
  - is not provided
@@ -59,12 +59,12 @@ Returns an array of table names (`Array<String>`).
 ## Drop table
 
 ```js
-idb.dropTable('my-table');
+idb.dropTable(tableName);
 ```
     
-| Param | Required | Default | Description |
-|:--|---|---|:--|
-| tableName | Yes | _None_ | Name of the table |
+| Param | Required | Type | Default | Description |
+|:--|--|---|---|:--|
+| tableName | Yes | _String_ | _None_ | Name of the table to drop |
 
 Returns the current instance of [`Database`](#).
 
