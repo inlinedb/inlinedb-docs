@@ -14,7 +14,7 @@ A table is created from a database instance using [`Database`](./database.md)`::
 ## Insert rows
 
 ```js
-idb.insert(row, [, row, ...rows]);
+idb.insert(row[, row, ...rows]);
 ```
 
 | Param | Required | Type | Default | Description |
@@ -49,6 +49,30 @@ idb.query(filter);
 A `Promise` that resolves to a an array of rows that is matched by the given filter.
  
 ## Update rows
+
+```js
+idb.update(update[, filter]);
+```
+
+| Param | Required | Type | Default | Description |
+|:---|:---|:---|:---|:---|
+| update | Yes | _Function_ | _None_ | A non mutative function that will be run on each row |
+| filter | No | one of _<ul><li>Number</li><li>Array<Number></li><li>Function</li></ul>_ | `[Function: () => true]` | Takes in an `id` or an array of `ids` or a filter function that will be matched against row |
+
+#### Throws
+
+ - When `udpate` is not a function.
+ - When `udpate` might mutate the row.
+ - When `udpate` might return a value other than an `Object`.
+    
+#### Returns
+
+A `Promise` that resolves to a an array of rows that is matched by the given filter.
+
+#### Notes
+ - Does not mutate the table until [`Table`](#)`::`[`save`](#save-queries) is called.
+ - Can be reverted before saving using [`Table`](#)`::`[`revert`](#revert-queries).
+
 ## Delete rows
 ## Save queries
 ## Revert queries
