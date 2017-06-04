@@ -8,7 +8,7 @@
   - [Database](./api/database.md)
   - [Table](./api/table.md)
 
-- Examples
+- [Examples](./examples)
 - Limitations
 - Contributing
-- [License](./MIT.md)
+- [License](./license.md)
