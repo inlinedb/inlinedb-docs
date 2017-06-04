@@ -6,6 +6,7 @@
  - [Query rows from a table](./query-rows.md)
  - [Update rows in a table](./update-rows.md)
  - [Delete rows form a table](./delete-rows.md)
+ - [Chaining](./chaining.md)
  - [Save queries to the table](./save-queries.md)
  - [Revert queries](./revert-queries.md)
  - [Delete a table](./delete-table.md)
