@@ -1,24 +1,5 @@
 # Query rows
 
-Consider the following table:
-
-```json
-[
-  {
-    "$idbID": 1,
-    "column": "column 1"
-  },
-  {
-    "$idbID": 2,
-    "column": "column 2"
-  },
-  {
-    "$idbID": 3,
-    "column": "column match"
-  }
-]
-```
-
 Querying can be achieved using an `$idbID`, an array of `$idbID`, or a custom function, or nothing in which case it will 
 return everything. Querying is done asynchronously, so it will return a promise that will resolve to queried data.
 
