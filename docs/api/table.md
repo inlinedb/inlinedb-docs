@@ -14,7 +14,7 @@ All data manipulation operations are transactional i.e until saved, none of the 
  
 ## Insert rows
 
-Adds a query to queue to insert the given rows.
+Queues a query to insert the given rows.
 
 ```js
 table.insert(row[, row, ...rows]);
@@ -56,7 +56,7 @@ A `Promise` that resolves to a an array of rows that is matched by the given fil
 
 ## Update rows
 
-Adds a query to queue to update the rows that are matched by the given `filter`, and run given `update` on each of the filtered row to get the updated row.
+Queues a query to update the rows that are matched by the given `filter`, and run given `update` on each of the filtered row to get the updated row.
 
 ```js
 table.update(update[, filter]);
@@ -84,7 +84,7 @@ The current instance of [`Table`](#).
 
 ## Delete rows
 
-Adds a query to queue to delete the rows that are matched by the given `filter`.
+Queues a query to delete the rows that are matched by the given `filter`.
 
 ```js
 table.delete([filter]);
@@ -105,7 +105,7 @@ The current instance of [`Table`](#).
 
 ## Save queries
 
-Saves pending queries to the table. Once done, it empties the query queue.
+Saves queued queries to the table. Once done, it empties the query queue.
 
 ```js
 table.save();
