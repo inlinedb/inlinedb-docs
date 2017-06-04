@@ -1,4 +1,4 @@
-# Query rows
+# Query rows from a table
 
 Querying can be achieved using an `$idbID`, an array of `$idbID`, or a custom function, or nothing in which case it will 
 return everything. Querying is done asynchronously, so it will return a promise that will resolve to queried data.

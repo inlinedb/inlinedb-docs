@@ -1,4 +1,4 @@
-# Chaining
+# Chaining operations
 
 Since its all `Promises` and `this`, all the operations can be easily chained.
 

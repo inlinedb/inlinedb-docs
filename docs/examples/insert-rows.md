@@ -1,4 +1,4 @@
-# Insert rows
+# Insert rows into a table
 
 Multiple rows can be inserted into the table, but at least one row must be provided. 
 

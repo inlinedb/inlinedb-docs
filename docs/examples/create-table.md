@@ -1,4 +1,4 @@
-# Create table
+# Create a table
 
 Use the idb instance to create a table. At this point there will be no table created in the system.
 

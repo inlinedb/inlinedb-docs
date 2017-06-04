@@ -1,4 +1,4 @@
-# Update rows
+# Update rows in a table
 
 Updating rows takes two parameters. An update function that is required and an optional filter. 
 

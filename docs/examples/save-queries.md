@@ -1,4 +1,4 @@
-# Save queries
+# Save queries to a table
 
 All the mutative queries, `::`[`insert`](../api/table.md#query-rows), `::`[`update`](../api/table.md#update-rows) and
 `::`[`delete`](../api/table.md#delete-rows) are not executed immediately, until saved. This gives the ability to

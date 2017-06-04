@@ -1,4 +1,4 @@
-# Delete rows
+# Delete rows from a table
 
 Deleting rows takes an optional [`filter`](./query-rows.md) similar to
 [`Table`](../api/table.md)`::`[`query`](../api/table.md#query-rows). It can be an `$idbID`, an array of `$idbID`, or a

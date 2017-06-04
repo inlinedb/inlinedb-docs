@@ -1,4 +1,4 @@
-# Create database
+# Create a database
 
 Import the InlineDB library to instantiate a new database.
 
