@@ -22,13 +22,16 @@ const idb = new InlineDB(idbName);
 |:---|:---:|:---:|:---:|:---|
 | idbName | Yes | _String_ | _None_ | Name of the database to create |
 
-Throws error when `idbName`
- - is not provided.
- - is not a string.
- - does not match `[a-zA-Z0-9]+([-_][a-zA-Z0-9]+)*` pattern.
+#### Throws
+
+ - When `idbName` is not provided.
+ - When `idbName` is not a string.
+ - When `idbName` does not match `[a-zA-Z0-9]+([-_][a-zA-Z0-9]+)*` pattern.
     - see [naming conventions](./naming-conventions.md) for examples.
     
-Returns an instance of [`Database`](#).
+#### Returns
+
+An instance of [`Database`](#).
 
 ## Create table
 
@@ -40,13 +43,16 @@ idb.createTable(tableName);
 |:---|:---|:---|:---|:---|
 | tableName | Yes | _String_ | _None_ | Name of the table to create |
 
-Throws error when `tableName`
- - is not provided
- - is not a string
- - does not match `[a-zA-Z0-9]+([-_][a-zA-Z0-9]+)*` pattern
-    - see [naming conventions](./naming-conventions.md) for examples
+#### Throws
+
+ - When `tableName` is not provided.
+ - When `tableName` is not a string.
+ - When `tableName` does not match `[a-zA-Z0-9]+([-_][a-zA-Z0-9]+)*` pattern.
+    - see [naming conventions](./naming-conventions.md) for examples.
     
-Returns an instance of [`Table`](./table.md).
+#### Returns
+ 
+An instance of [`Table`](./table.md).
     
 ## List tables
 
@@ -54,7 +60,9 @@ Returns an instance of [`Table`](./table.md).
 idb.listTables();
 ```
     
-Returns an array of table names (`Array<String>`).
+#### Returns
+
+An array of table names (`Array<String>`).
 
 ## Drop table
 
@@ -66,7 +74,9 @@ idb.dropTable(tableName);
 |:---|:---|:---|:---|:---|
 | tableName | Yes | _String_ | _None_ | Name of the table to drop |
 
-Returns the current instance of [`Database`](#).
+#### Returns 
+
+Current instance of [`Database`](#).
 
 ## Drop database
 
@@ -74,4 +84,6 @@ Returns the current instance of [`Database`](#).
 idb.drop();
 ```
 
-Returns `undefined`.
+#### Returns 
+
+Nothing (`undefined`).
