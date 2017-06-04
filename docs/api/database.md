@@ -35,6 +35,8 @@ An instance of [`Database`](#).
 
 ## Create table
 
+Creates an instance of [`Table`](./table.md).
+
 ```js
 idb.createTable(tableName);
 ```
@@ -56,6 +58,8 @@ An instance of [`Table`](./table.md).
     
 ## List tables
 
+Lists table that are created so far in the database.
+
 ```js
 idb.listTables();
 ```
@@ -65,6 +69,8 @@ idb.listTables();
 An array of table names (`Array<String>`).
 
 ## Drop table
+
+Deletes a table permanently.
 
 ```js
 idb.dropTable(tableName);
@@ -79,6 +85,8 @@ idb.dropTable(tableName);
 Current instance of [`Database`](#).
 
 ## Drop database
+
+Deletes the database permanently.
 
 ```js
 idb.drop();
