@@ -1,6 +1,6 @@
 # Chaining operations
 
-Since its all `Promises` and `this`, all the operations can be easily chained.
+Since its all `Promise` and `this`, all the operations can be easily chained.
 
 ```js
 import InlineDB from 'inlinedb';
@@ -32,7 +32,7 @@ table.save()
 //   },
 //   {
 //     $idbID: 3,
-//     column: 'column match'
+//     column: 'column 3'
 //   }
 // ]
 ```
