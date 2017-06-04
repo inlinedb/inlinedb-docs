@@ -69,3 +69,9 @@ idb.dropTable('my-table');
 Returns the current instance of [`Database`](#).
 
 ## Drop database
+
+```js
+idb.drop();
+```
+
+Returns `undefined`.
