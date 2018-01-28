@@ -1,6 +1,6 @@
 {
   "name": "@inlinedb/docs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./docs/readme.md",
   "description": "InlineDB documentation",
   "repository": "inlinedb/inlinedb-docs",
